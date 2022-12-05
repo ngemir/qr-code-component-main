@@ -1,0 +1,70 @@
+/* Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+/* Global Style */
+:root {
+  /* Color Variable*/
+  --white: hsl(0, 0%, 100%);
+  --light-gray: hsl(212, 45%, 89%);
+  --graysh-blue: hsl(220, 15%, 55%);
+  --dark-blue: hsl(218, 44%, 22%);
+  --qrcode: url('../images/image-qr-code.png');
+
+  /* Font */
+  font-family: 'Outfit', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+body{
+  background-color: var(--light-gray);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 95% 5%;
+  align-items: center;
+  justify-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background-color: var(--white);
+  border-radius: 25px;
+  text-align: center;
+  width: 325px;
+  margin: 25px;
+}
+
+.qrcode{
+  border-radius: 15px;
+  overflow: hidden;
+  margin: 20px;
+}
+
+.qrcode img{
+  max-width:100%;
+  max-height:100%;
+  border-radius: 15px;
+}
+
+.description {
+  margin: 0 2rem 2.5rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: var(--dark-blue);
+}
+
+p{
+  color: var(--graysh-blue);
+}
+
+/* Mobile CSS */
+@media screen and (min-width: 375px) {
+}
+
+/* Desktop CSS */
+@media screen and (min-width: 1440px) {
+  
+}
